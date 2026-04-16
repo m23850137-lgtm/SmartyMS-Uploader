@@ -34,7 +34,7 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
-my_name = "MS"
+my_name = "MK"
 
 cookies_file_path = os.getenv("COOKIES_FILE_PATH", "/modules/youtube_cookies.txt")
 
@@ -148,7 +148,7 @@ async def start(client: Client, msg: Message):
     await asyncio.sleep(1)
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
-        "Checking status Okay... Command is Private Dear.🌚**Bot Made BY @Lapata_786**🔍\n\n"
+        "Checking status Okay... Command is Private Dear.🌚**Bot Made BY @Mk_khan001**🔍\n\n"
         "Progress:[🟩🟩🟩🟩🟩🟩🟩🟩🟩] 100%\n\n"
     )
 
@@ -158,7 +158,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["Mahi"]) )
+@bot.on_message(filters.command(["Mkhan"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"**🔹Hi I am Poweful Lovely TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and Just wait and Watch😚.**")
     input: Message = await bot.listen(editable.chat.id)
@@ -219,20 +219,20 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your Name or send '/Mahi' for use default.🌚\n Eg :@Lapata_786 **")
+    await editable.edit("**Enter Your Name or send '/Mahi' for use default.🌚\n Eg :@Mk_khan001 **")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
-    if raw_text3 == '/Mahi':
+    if raw_text3 == '/Mk':
         CR = credit
     else:
         CR = raw_text3
         
-    await editable.edit("**Enter Your PW Token For 𝐌𝐏𝐃 𝐔𝐑𝐋  or send '/Mahi' for use default🎀**")
+    await editable.edit("**Enter Your PW Token For 𝐌𝐏𝐃 𝐔𝐑𝐋  or send '/Mk' for use default🎀**")
     input4: Message = await bot.listen(editable.chat.id)
     raw_text4 = input4.text
     await input4.delete(True)
-    if raw_text4 == '/Mahi':
+    if raw_text4 == '/Mk':
         MR = token
     else:
         MR = raw_text4
@@ -311,8 +311,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**📹 VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {res}.mkv\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By♠ : {CR}\n\n**∘₊❀╬━═══𓆩A͢L͢I͢𓆪═══━╬❀₊∘**'
-                cc1 = f'**💾 PDF_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} .pdf\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By♠ : {CR}\n\n**∘₊❀╬━═══𓆩A͢L͢I͢𓆪═══━╬❀₊∘**'
+                cc = f'**📹 VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {res}.mkv\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By♠ : {CR}\n\n**∘₊❀╬━═══𓆩MK𓆪═══━╬❀₊∘**'
+                cc1 = f'**💾 PDF_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} .pdf\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By♠ : {CR}\n\n**∘₊❀╬━═══𓆩MK𓆪═══━╬❀₊∘**'
                     
                 
                 if "drive" in url:
@@ -374,7 +374,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue                       
                           
                 else:
-                    Show = f"✰🖥️ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝗪𝗮𝗶𝘁..🤖🚀 »\n\n📝 Title:- `{name}\n\n📹 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲🧸: ✦ @Lapata_786 ❖"
+                    Show = f"✰🖥️ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝗪𝗮𝗶𝘁..🤖🚀 »\n\n📝 Title:- `{name}\n\n📹 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲🧸: ✦ @Mk_khan001 ❖"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -425,7 +425,7 @@ async def txt_handler(bot: Client, m: Message):
         arg = int(raw_text)
     except:
         arg = 1
-    await editable.edit("**Enter Your Batch Name or send '/Mahi' for grabing from text filename.🌚**")
+    await editable.edit("**Enter Your Batch Name or send '/Mk' for grabing from text filename.🌚**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
@@ -456,11 +456,11 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your Name or send '/Mahi' for use default.😗\n Eg : @Lapata_786**")
+    await editable.edit("**Enter Your Name or send '/Mahi' for use default.😗\n Eg : @Mk_khan001**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
-    if raw_text3 == '/Mahi':
+    if raw_text3 == '/Mk':
         CR = credit
     else:
         CR = raw_text3
@@ -545,8 +545,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
         
-                cc = f'**📹 VID_ID: {str(count).zfill(3)}.\n\nTitle: {name1} STUDENTS💛{res}.mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By♠ : {CR}\n\n**∘₊✿━━━✿༄Mahi✿━━━✿₊∘**'
-                cc1 = f'**💾 PDF_ID: {str(count).zfill(3)}.\n\nTitle: {name1} STUDENTS💛.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By♠ : {CR}\n\n**∘₊✿━━━✿༄Mahi✿━━━✿₊∘**'
+                cc = f'**📹 VID_ID: {str(count).zfill(3)}.\n\nTitle: {name1} STUDENTS💛{res}.mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By♠ : {CR}\n\n**∘₊✿━━━✿༄Shehzada✿━━━✿₊∘**'
+                cc1 = f'**💾 PDF_ID: {str(count).zfill(3)}.\n\nTitle: {name1} STUDENTS💛.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By♠ : {CR}\n\n**∘₊✿━━━✿༄Shehzada✿━━━✿₊∘**'
                     
                 
                 if "drive" in url:
@@ -608,7 +608,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue                       
                           
                 else:
-                    Show = f"✰🖥️𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝗪𝗮𝗶𝘁..🤖🚀»\n\n📝 Title:- `{name}\n\n🖥️ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲🧸: ✦ @Lapata_786✰"
+                    Show = f"✰🖥️𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝗪𝗮𝗶𝘁..🤖🚀»\n\n📝 Title:- `{name}\n\n🖥️ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲🧸: ✦ @Mk_khan001✰"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
